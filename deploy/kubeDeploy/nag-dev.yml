@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: nagbotongraph
-        image: johnshew/nagbotongraph:186
+        image: johnshew/nagbotongraph:dev
         imagePullPolicy: Always
         env:
         - name: appId
@@ -45,6 +45,8 @@ spec:
             secretKeyRef:
               name: envfile
               key: luisKey
+        - name: DEPLOYMENT_ENV
+          value: "dev"
         ports:
         - containerPort: 8080
           name: rest-port
