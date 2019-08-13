@@ -103,8 +103,8 @@ spec:
         - --ssh-keygen-dir=/var/fluxd/keygen
 
         # replace or remove the following URL.
-        - --git-url=git@github.com:johnshew/nagbotongraph
-        - --git-branch=johnshew-dev
+        - --git-url=git@github.com:johnshew/nagbot-ops
+        - --git-branch=master
         # include this if you want to restrict the manifests considered by flux
         # to those under the following relative paths in the git repository
         - --git-path=deploy/kubeDeploy
