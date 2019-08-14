@@ -4,7 +4,8 @@ kind: Deployment
 metadata:
   name: nagbot-deployment
   annotations:
-    flux.weave.works/automated: 'true' # - rev 2
+    flux.weave.works/automated: 'true'
+    flux.weave.works/tag.nagbot: glob:prod-*
 spec:
   selector:
     matchLabels:
