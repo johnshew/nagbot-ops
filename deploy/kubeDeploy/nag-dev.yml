@@ -4,7 +4,8 @@ kind: Deployment
 metadata:
   name: nagbot-deployment-dev
   annotations:
-    flux.weave.works/automated: 'true' # - rev 2
+    flux.weave.works/automated: 'true'
+    flux.weave.works/tag.nagbotongraph: glob:dev-*
 spec:
   selector:
     matchLabels:
@@ -17,7 +18,7 @@ spec:
     spec:
       containers:
       - name: nagbotongraph
-        image: johnshew/nagbotongraph:dev
+        image: johnshew/nagbotongraph:217
         imagePullPolicy: Always
         env:
         - name: appId
