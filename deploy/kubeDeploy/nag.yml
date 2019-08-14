@@ -17,7 +17,11 @@ spec:
     spec:
       containers:
       - name: nagbot
+<<<<<<< HEAD
         image: johnshew/nagbotongraph:217
+=======
+        image: johnshew/nagbotongraph:222
+>>>>>>> 93cf347e0f148f511056ee844e18a7600f0d180c
         imagePullPolicy: Always
         env:
         - name: appId
